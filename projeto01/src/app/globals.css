@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0;
 }
 
-body{
+body {
   background-image: linear-gradient(to right, rgb(95, 191, 255), rgb(9, 9, 150));
 }
 
-.navbar{
+.navbar {
   background-image: linear-gradient(to right, rgb(76, 176, 243), rgb(9, 9, 150));
   display: flex;
 }
 
-.logo img{
+.logo img {
   width: 150px;
   margin-left: 150px;
 }
 
-select{
+select {
   text-decoration: none;
   border: none;
   background: none;
@@ -24,21 +24,21 @@ select{
   color: white;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
   align-content: center;
 }
 
-.navRedirect{
+.navRedirect {
   display: flex;
   align-content: center;
   gap: 40px;
   margin-left: 800px;
 }
 
-.wwu{
+.wwu {
   background-color: rgb(255, 133, 154);
   height: 13px;
   align-self: center;
@@ -46,30 +46,30 @@ a{
   border-radius: 100px;
 }
 
-.wwu:hover{
+.wwu:hover {
   background-color: rgb(240, 240, 240);
   color: black;
   transition: all ease 1s;
   transform: scale(1.05);
 }
 
-a:hover{
+a:hover {
   transform: scale(1.05);
   transition: all ease 0.3s;
 }
 
-select:hover{
+select:hover {
   transform: scale(1.05);
   transition: all ease 0.3s;
   cursor: pointer;
 }
 
-.principal{
+.principal {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-.principalText{
+.principalText {
   color: white;
   font-family: sans-serif;
   margin-left: 250px;
@@ -77,26 +77,33 @@ select:hover{
   margin-top: 200px;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }
 
-.cell img{
+.cell img {
   margin-top: 100px;
 }
 
-#smallText{
-  color:white;
+#smallText {
+  color: white;
   font-family: sans-serif;
   margin-left: 250px;
   margin-top: -70px;
 }
 
-.wwuPrincipal{
+.wwuPrincipal {
   margin-left: -550px;
   background-color: rgb(255, 133, 154);
   height: 13px;
   margin-top: -30px;
   padding: 20px;
   border-radius: 100px;
+}
+
+.wwuPrincipal:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  transition: all ease 1s;
+  transform: scale(1.05);
 }
