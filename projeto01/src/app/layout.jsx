@@ -21,28 +21,40 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         <header>
-          <ul>
-            <li><a href="/sobre"> Sobre</a></li>
-            <li><a href="/sobre/empresa">Empresa</a></li>
-            <li> <Link href={"/"}> Pagina inicial</Link></li>
-          </ul>
+          <nav className="navbar">
+            <div className="logo"><Link href={"/"}><img src="https://thumb.tildacdn.com/tild6562-3465-4362-b435-343935623062/-/format/webp/Frame_1908.png" alt="imagem" />
+            </Link></div>
+            <div className="navRedirect">
+              <select>
+                <option>WHAT WE DO </option>
+              </select>
+              <Link href="/blog">BLOG</Link>
+              <Link href="/careers">CAREERS</Link>
+              <Link href="/podcast">PODCAST</Link>
+              <Link className="wwu" href="/WWU">WORK WITH US</Link>
+            </div>
+          </nav>
         </header>
 
-        
+
         {children}
 
         <footer>
+          <div className="footerclass">
+            <div className="icons">
+                <img src="https://www.pngkey.com/png/full/130-1304392_polygraph-media-facebook-certified-marketing-partner.png" width={250}>
+                </img>
+                <img src="https://www.loomdigital.co.uk/wp-content/uploads/2025/04/Google-Partner-Badge-Midnight2.png" width={90}></img>
+                <img src="/imagens/forbes.png" width={100}></img>
+                <img src="https://public.openwatercdn.com/5be3571d-3f52-4538-8e72-8adc144b0a67/ab0b559d-6043-4518-a3b6-d891f912ea35.png" width={150}></img>
 
-          <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Linkedin</li>
-          </ul>
+            </div>
+          </div>
+        </footer>
 
-          </footer>
 
-        
+
       </body>
-    </html> 
+    </html>
   );
 }

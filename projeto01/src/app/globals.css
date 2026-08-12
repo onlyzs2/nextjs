@@ -107,3 +107,7 @@ h2 {
   transition: all ease 1s;
   transform: scale(1.05);
 }
+
+.footerclass{
+  gap: 20px; 
+}

@@ -1,9 +1,10 @@
 import Link from "next/link";
+import "./wwu.css";
 
 export default function Home() {
   return (
     <>
-      
+    
       <div className="principal">
         <div className="principalText">
           <h2>Unlock Your Business Potential With Facebook & Instagram Advertising</h2>
