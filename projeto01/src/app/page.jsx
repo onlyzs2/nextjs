@@ -30,7 +30,7 @@ export default function Home() {
           </div>  
       </div>
         <div className="navRedirect">
-          <a className="wwuPrincipal" href="">WORK WITH US</a>aaa
+          <a className="wwuPrincipal" href="">WORK WITH US</a>
         </div>
         
     </>
