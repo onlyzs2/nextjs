@@ -1,0 +1,147 @@
+.trust-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem 5rem 3rem;
+  margin-top: auto;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trust-item p {
+  font-size: 0.85rem;
+  color: #c4d1ff;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.trust-item.text-only h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.trust-icon {
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 45px;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.facebook .f-logo {
+  background: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.facebook .trust-icon-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding-left: 0.5rem;
+}
+.facebook .trust-icon-text strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.facebook .trust-icon-text span {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  height: 36px;
+}
+
+.google .g-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google .trust-icon-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  border-left: 1px solid #ccc;
+  padding-left: 0.5rem;
+}
+
+.forbes {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.forbes-logo {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.forbes-sub {
+  font-size: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.8);
+}
+
+.inc {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.inc strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.inc span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .heroImagem {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .trust-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

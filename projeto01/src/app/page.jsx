@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BannerCTA from "@/components/bannerCTA";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -6,7 +7,7 @@ export default async function Home() {
   
   await delay(3500);
 
-  throw new Error("simulando um erro catastrofico demoniaco dos infernos!!!!");
+  // throw new Error("simulando um erro catastrofico demoniaco dos infernos!!!!");
 
   return (
     <>
@@ -24,6 +25,12 @@ export default async function Home() {
         <div className="navRedirect">
           <a className="wwuPrincipal" href="">WORK WITH US</a>
         </div>
+
+
+
+
+
+        <BannerCTA/>
         
     </>
   );
