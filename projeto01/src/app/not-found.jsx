@@ -1,4 +1,4 @@
-import FigureNotFound from "@/components/FigureNotFound"
+import FigureNotFound from "@/components/figureNotFound"
 
 export default function NotFound(){
 

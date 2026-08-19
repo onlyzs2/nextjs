@@ -1,4 +1,4 @@
-import Figureloading from "@/components/Figureloading"
+import Figureloading from "@/components/figureloading"
 
 export default function loading(){
     

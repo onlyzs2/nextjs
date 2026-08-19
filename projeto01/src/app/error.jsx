@@ -1,6 +1,6 @@
 'use client'
 
-import FigureError from "@/components/FigureError"
+import FigureError from "@/components/figureError"
 import { useEffect } from "react"
 
 export default function Error({error, retry}){
@@ -12,7 +12,6 @@ export default function Error({error, retry}){
             <>
                 <div className="container-notfound">
                     <div className="flex-notfound">
-                        {/* <button onClick={()=> retry}></button> */}
                         <FigureError/>
                     </div>
                 </div>
