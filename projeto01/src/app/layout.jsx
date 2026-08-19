@@ -39,19 +39,6 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <footer>
-          <div className="footerclass">
-            <div className="icons">
-                <img src="https://www.pngkey.com/png/full/130-1304392_polygraph-media-facebook-certified-marketing-partner.png" width={250}>
-                </img>
-                <img src="https://www.loomdigital.co.uk/wp-content/uploads/2025/04/Google-Partner-Badge-Midnight2.png" width={90}></img>
-                <img src="/imagens/forbes.png" width={100}></img>
-                <img src="https://public.openwatercdn.com/5be3571d-3f52-4538-8e72-8adc144b0a67/ab0b559d-6043-4518-a3b6-d891f912ea35.png" width={150}></img>
-
-            </div>
-          </div>
-        </footer>
-
 
 
       </body>

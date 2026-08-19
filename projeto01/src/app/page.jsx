@@ -1,6 +1,13 @@
 import Link from "next/link";
 
-export default function Home() {
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export default async function Home() {
+  
+  await delay(3500);
+
+  throw new Error("simulando um erro catastrofico demoniaco dos infernos!!!!");
+
   return (
     <>
       
