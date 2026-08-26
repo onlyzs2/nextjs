@@ -1,6 +1,6 @@
 import "./cardProduto.css"
 
-export default function CardProdutos({
+export default function CardProduto({
     titulo,
     imagem,
     descricao, 

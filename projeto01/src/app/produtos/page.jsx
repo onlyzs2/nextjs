@@ -1,4 +1,5 @@
-import CardProdutos from "@/components/cardProdutos";
+import CardProduto from "@/components/cardProdutos";
+import "./produtos.css"
 
 export default function Produtos(){
     
@@ -8,7 +9,7 @@ export default function Produtos(){
             titulo: "Detergente YPE",
             descricao: "É legal mas nao pode beber",
             imagem: "detergente.png",
-            preco: 4.50,
+            preco: 4.50
         },
 
         {
@@ -16,7 +17,7 @@ export default function Produtos(){
             titulo: "Sabão em pó",
             descricao: "mais área de contato, mais poder!",
             imagem: "sabaoempo.png",
-            preco: 4.50,
+            preco: 4.50
         },
 
         {
@@ -24,7 +25,7 @@ export default function Produtos(){
             titulo: "Desifetante MINUA",
             descricao: "hmm é cremoso é saboroso perai errei",
             imagem: "desinfetante.png",
-            preco: 4.00,
+            preco: 4.00
         },
         
         {
@@ -32,7 +33,7 @@ export default function Produtos(){
             titulo: "Sabonete DOVE",
             descricao: "gostoso e lava a boca",
             imagem: "sabonete.png",
-            preco: 1.50,
+            preco: 1.50
         }
     ];
 
@@ -40,18 +41,23 @@ export default function Produtos(){
     
     return(
         <>
-            <h1>pagina de listagem de protudos</h1>
+            <h1>pagina de listagem de produtos</h1>
 
             {/* aqui é onde ficarão os cards de produto  */}
 
-            {listaProdutos.map(produto => {
-                return <CardProdutos
+            <div className="card-container">
+
+            {listaProdutos.map((produto, idx) => {
+                return <CardProduto
+                    // key={produto.id}
+                    key={idx}
                     titulo={produto.titulo}
                     descricao={produto.descricao}
                     imagem={produto.imagem}
                     preco={produto.preco}
                 />
             })}
+            </div>
         </>
     )
 }
