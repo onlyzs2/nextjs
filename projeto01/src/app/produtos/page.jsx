@@ -1,7 +1,10 @@
+import CardProdutos from "@/components/cardProdutos";
+
 export default function Produtos(){
     
     const listaProdutos = [
         {
+            id: 1,
             titulo: "Detergente YPE",
             descricao: "É legal mas nao pode beber",
             imagem: "detergente.png",
@@ -9,6 +12,7 @@ export default function Produtos(){
         },
 
         {
+            id: 2,
             titulo: "Sabão em pó",
             descricao: "mais área de contato, mais poder!",
             imagem: "sabaoempo.png",
@@ -16,6 +20,7 @@ export default function Produtos(){
         },
 
         {
+            id: 3,
             titulo: "Desifetante MINUA",
             descricao: "hmm é cremoso é saboroso perai errei",
             imagem: "desinfetante.png",
@@ -23,6 +28,7 @@ export default function Produtos(){
         },
         
         {
+            id: 4,
             titulo: "Sabonete DOVE",
             descricao: "gostoso e lava a boca",
             imagem: "sabonete.png",
@@ -37,6 +43,15 @@ export default function Produtos(){
             <h1>pagina de listagem de protudos</h1>
 
             {/* aqui é onde ficarão os cards de produto  */}
+
+            {listaProdutos.map(produto => {
+                return <CardProdutos
+                    titulo={produto.titulo}
+                    descricao={produto.descricao}
+                    imagem={produto.imagem}
+                    preco={produto.preco}
+                />
+            })}
         </>
     )
 }
