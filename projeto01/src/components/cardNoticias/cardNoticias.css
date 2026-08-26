@@ -1,0 +1,15 @@
+.card-wrapper{
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;  
+}
+
+.card-wrapper img{
+    height: auto;
+    width: 500px;
+}

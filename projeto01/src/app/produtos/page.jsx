@@ -46,7 +46,6 @@ export default function Produtos(){
             {/* aqui é onde ficarão os cards de produto  */}
 
             <div className="card-container">
-
             {listaProdutos.map((produto, idx) => {
                 return <CardProduto
                     // key={produto.id}
