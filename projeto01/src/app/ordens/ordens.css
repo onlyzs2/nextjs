@@ -1,0 +1,49 @@
+.tabela {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+.tabela thead {
+    background: linear-gradient(90deg, #3f9eea, #2410a8);
+}
+
+.tabela th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Linhas */
+.tabela td {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 15px;
+}
+
+/* Efeito nas linhas */
+.tabela tbody tr {
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.25s ease;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.tabela tbody td:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.05);
+    transition: ease 0.3s;
+    
+}
